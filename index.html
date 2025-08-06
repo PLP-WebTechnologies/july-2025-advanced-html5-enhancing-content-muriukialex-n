@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enhanced HTML5 Page with Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      line-height: 1.6;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    table, th, td {
+      border: 1px solid #555;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    fieldset {
+      margin-top: 20px;
+      padding: 15px;
+      border: 1px solid #888;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+    iframe {
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates the use of HTML5 lists, tables, embedded media, and a structured form with validation.</p>
+  </header>
+
+  <section>
+    <h2>My Top 3 Hobbies</h2>
+    <ul>
+      <li>Swimming</li>
+      <li>Nature Walking</li>
+      <li>Cooking</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Weekly Schedule</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Activity</th>
+          <th>Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monday</td>
+          <td>Coding Practice</td>
+          <td>2 hours</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>Nature Walk</td>
+          <td>1.5 hours</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>Swimming</td>
+          <td>3 hours</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>My Favorite Song</h2>
+    <audio controls>
+      <source src="favourite.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p><em>This is my <strong> favourite </strong>song</em></p>
+  </section>
+
+  <section>
+    <h2>Watch This Video</h2>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/SlLPHtQ1e0s"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Personal Details</legend>
+        
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" minlength="3"/>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="on"/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="6"/>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+
+        <label>
+          <input type="checkbox" name="agree" required/>
+          I agree to the terms and conditions
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Submit Form"/>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HTML5 Assignment. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
